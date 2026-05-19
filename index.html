@@ -889,11 +889,11 @@
     // Replace YOUR_SCRIPT_URL with your Google Apps Script web app URL
     const SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
     
-    fetch('https://formspree.io/f/xdajalgy', {
+    fetch('https://sheetdb.io/api/v1/36pmppwzq3bvy', {
       method: 'POST',
       headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    }).then(r => console.log('Formspree:', r.status)).catch(err => console.log('err:', err));
+      body: JSON.stringify({data: payload})
+    }).then(r => console.log('SheetDB:', r.status)).catch(err => console.log('err:', err));
   });
 
   // Clear invalid on input
